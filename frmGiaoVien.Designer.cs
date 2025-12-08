@@ -93,7 +93,8 @@ namespace frmGiaoVien
             lblTitle.Size = new Size(1371, 53);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "QU?N LÝ CÁN B? / GIÁO VIÊN";
-            // TODO: property not found on KryptonLabel — review`r`n
+            // TODO: property not found on KryptonLabel - review
+
             //lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // grpThongTin
@@ -497,7 +498,8 @@ namespace frmGiaoVien
             btnTim.Size = new Size(86, 33);
             btnTim.TabIndex = 2;
             btnTim.Text = "Tìm";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnTim.UseVisualStyleBackColor = true;
             // 
             // txtTimKiem
@@ -559,7 +561,8 @@ namespace frmGiaoVien
             btnHuy.Size = new Size(86, 33);
             btnHuy.TabIndex = 4;
             btnHuy.Text = "H?y";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnHuy.UseVisualStyleBackColor = true;
             // 
             // btnLuu
@@ -571,7 +574,8 @@ namespace frmGiaoVien
             btnLuu.Size = new Size(86, 33);
             btnLuu.TabIndex = 3;
             btnLuu.Text = "Luu";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnLuu.UseVisualStyleBackColor = true;
             // 
             // btnXoa
@@ -583,7 +587,8 @@ namespace frmGiaoVien
             btnXoa.Size = new Size(86, 33);
             btnXoa.TabIndex = 2;
             btnXoa.Text = "Xóa";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnXoa.UseVisualStyleBackColor = true;
             // 
             // btnSua
@@ -595,7 +600,8 @@ namespace frmGiaoVien
             btnSua.Size = new Size(86, 33);
             btnSua.TabIndex = 1;
             btnSua.Text = "S?a";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnSua.UseVisualStyleBackColor = true;
             // 
             // btnThem
@@ -607,7 +613,8 @@ namespace frmGiaoVien
             btnThem.Size = new Size(86, 33);
             btnThem.TabIndex = 0;
             btnThem.Text = "Thêm";
-            // TODO: property not found on KryptonButton — review`r`n
+            // TODO: property not found on KryptonButton - review
+
             //btnThem.UseVisualStyleBackColor = true;
             // 
             // frmGiaoVien
@@ -690,6 +697,8 @@ namespace frmGiaoVien
         private Krypton.Toolkit.KryptonButton btnThem;
     }
 }
+
+
 
 
 
