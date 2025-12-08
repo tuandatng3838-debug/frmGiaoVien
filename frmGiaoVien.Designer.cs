@@ -1,4 +1,5 @@
-Ôªønamespace frmGiaoVien
+using Krypton.Toolkit;
+namespace frmGiaoVien
 {
     partial class frmGiaoVien
     {
@@ -26,57 +27,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblTitle = new Label();
+            lblTitle = new Krypton.Toolkit.KryptonLabel();
             grpThongTin = new GroupBox();
-            txtNamDayGioiGanNhat = new TextBox();
-            lblNamDayGioiGanNhat = new Label();
-            txtLinhVucChuyenMon = new TextBox();
-            lblLinhVucChuyenMon = new Label();
-            txtHocVi = new TextBox();
-            lblHocVi = new Label();
-            txtHocHam = new TextBox();
-            lblHocHam = new Label();
-            txtChucDanh = new TextBox();
-            lblChucDanh = new Label();
-            txtHeSoLuong = new TextBox();
-            lblHeSoLuong = new Label();
-            txtCapBac = new TextBox();
-            lblCapBac = new Label();
-            txtChucVu = new TextBox();
-            lblChucVu = new Label();
-            txtDonViCongTac = new TextBox();
-            lblDonViCongTac = new Label();
-            txtTrinhDoLLCT = new TextBox();
-            lblTrinhDoLLCT = new Label();
-            txtTrinhDoChuyenMon = new TextBox();
-            lblTrinhDoChuyenMon = new Label();
-            txtSDT = new TextBox();
-            lblSDT = new Label();
-            txtTonGiao = new TextBox();
-            lblTonGiao = new Label();
-            txtDanToc = new TextBox();
-            lblDanToc = new Label();
-            txtQueQuan = new TextBox();
-            lblQueQuan = new Label();
-            dtpNgaySinh = new DateTimePicker();
-            lblNgaySinh = new Label();
-            cboGioiTinh = new ComboBox();
-            lblGioiTinh = new Label();
-            txtHoTen = new TextBox();
-            lblHoTen = new Label();
-            txtMaSoCB = new TextBox();
-            lblMaSoCB = new Label();
+            txtNamDayGioiGanNhat = new Krypton.Toolkit.KryptonTextBox();
+            lblNamDayGioiGanNhat = new Krypton.Toolkit.KryptonLabel();
+            txtLinhVucChuyenMon = new Krypton.Toolkit.KryptonTextBox();
+            lblLinhVucChuyenMon = new Krypton.Toolkit.KryptonLabel();
+            txtHocVi = new Krypton.Toolkit.KryptonTextBox();
+            lblHocVi = new Krypton.Toolkit.KryptonLabel();
+            txtHocHam = new Krypton.Toolkit.KryptonTextBox();
+            lblHocHam = new Krypton.Toolkit.KryptonLabel();
+            txtChucDanh = new Krypton.Toolkit.KryptonTextBox();
+            lblChucDanh = new Krypton.Toolkit.KryptonLabel();
+            txtHeSoLuong = new Krypton.Toolkit.KryptonTextBox();
+            lblHeSoLuong = new Krypton.Toolkit.KryptonLabel();
+            txtCapBac = new Krypton.Toolkit.KryptonTextBox();
+            lblCapBac = new Krypton.Toolkit.KryptonLabel();
+            txtChucVu = new Krypton.Toolkit.KryptonTextBox();
+            lblChucVu = new Krypton.Toolkit.KryptonLabel();
+            txtDonViCongTac = new Krypton.Toolkit.KryptonTextBox();
+            lblDonViCongTac = new Krypton.Toolkit.KryptonLabel();
+            txtTrinhDoLLCT = new Krypton.Toolkit.KryptonTextBox();
+            lblTrinhDoLLCT = new Krypton.Toolkit.KryptonLabel();
+            txtTrinhDoChuyenMon = new Krypton.Toolkit.KryptonTextBox();
+            lblTrinhDoChuyenMon = new Krypton.Toolkit.KryptonLabel();
+            txtSDT = new Krypton.Toolkit.KryptonTextBox();
+            lblSDT = new Krypton.Toolkit.KryptonLabel();
+            txtTonGiao = new Krypton.Toolkit.KryptonTextBox();
+            lblTonGiao = new Krypton.Toolkit.KryptonLabel();
+            txtDanToc = new Krypton.Toolkit.KryptonTextBox();
+            lblDanToc = new Krypton.Toolkit.KryptonLabel();
+            txtQueQuan = new Krypton.Toolkit.KryptonTextBox();
+            lblQueQuan = new Krypton.Toolkit.KryptonLabel();
+            dtpNgaySinh = new Krypton.Toolkit.KryptonDateTimePicker();
+            lblNgaySinh = new Krypton.Toolkit.KryptonLabel();
+            cboGioiTinh = new Krypton.Toolkit.KryptonComboBox();
+            lblGioiTinh = new Krypton.Toolkit.KryptonLabel();
+            txtHoTen = new Krypton.Toolkit.KryptonTextBox();
+            lblHoTen = new Krypton.Toolkit.KryptonLabel();
+            txtMaSoCB = new Krypton.Toolkit.KryptonTextBox();
+            lblMaSoCB = new Krypton.Toolkit.KryptonLabel();
             grpTimKiem = new GroupBox();
-            btnTim = new Button();
-            txtTimKiem = new TextBox();
-            lblTimKiem = new Label();
-            dgvGiaoVien = new DataGridView();
+            btnTim = new Krypton.Toolkit.KryptonButton();
+            txtTimKiem = new Krypton.Toolkit.KryptonTextBox();
+            lblTimKiem = new Krypton.Toolkit.KryptonLabel();
+            dgvGiaoVien = new Krypton.Toolkit.KryptonDataGridView();
             panelButtons = new Panel();
-            btnHuy = new Button();
-            btnLuu = new Button();
-            btnXoa = new Button();
-            btnSua = new Button();
-            btnThem = new Button();
+            btnHuy = new Krypton.Toolkit.KryptonButton();
+            btnLuu = new Krypton.Toolkit.KryptonButton();
+            btnXoa = new Krypton.Toolkit.KryptonButton();
+            btnSua = new Krypton.Toolkit.KryptonButton();
+            btnThem = new Krypton.Toolkit.KryptonButton();
             grpThongTin.SuspendLayout();
             grpTimKiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvGiaoVien).BeginInit();
@@ -91,8 +92,9 @@
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(1371, 53);
             lblTitle.TabIndex = 0;
-            lblTitle.Text = "QU·∫¢N L√ù C√ÅN B·ªò / GI√ÅO VI√äN";
-            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblTitle.Text = "QU?N L› C¡N B? / GI¡O VI N";
+            // TODO: property not found on KryptonLabel ó review`r`n
+            //lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // grpThongTin
             // 
@@ -142,7 +144,7 @@
             grpThongTin.Size = new Size(1371, 293);
             grpThongTin.TabIndex = 1;
             grpThongTin.TabStop = false;
-            grpThongTin.Text = "Th√¥ng tin c√°n b·ªô / gi√°o vi√™n";
+            grpThongTin.Text = "ThÙng tin c·n b? / gi·o viÍn";
             // 
             // txtNamDayGioiGanNhat
             // 
@@ -159,7 +161,7 @@
             lblNamDayGioiGanNhat.Name = "lblNamDayGioiGanNhat";
             lblNamDayGioiGanNhat.Size = new Size(226, 20);
             lblNamDayGioiGanNhat.TabIndex = 36;
-            lblNamDayGioiGanNhat.Text = "NƒÉm g·∫ßn nh·∫•t d·∫°y gi·ªèi / b√†i gi·ªèi";
+            lblNamDayGioiGanNhat.Text = "Nam g?n nh?t d?y gi?i / b‡i gi?i";
             // 
             // txtLinhVucChuyenMon
             // 
@@ -176,7 +178,7 @@
             lblLinhVucChuyenMon.Name = "lblLinhVucChuyenMon";
             lblLinhVucChuyenMon.Size = new Size(147, 20);
             lblLinhVucChuyenMon.TabIndex = 34;
-            lblLinhVucChuyenMon.Text = "Lƒ©nh v·ª±c chuy√™n m√¥n";
+            lblLinhVucChuyenMon.Text = "Linh v?c chuyÍn mÙn";
             // 
             // txtHocVi
             // 
@@ -193,7 +195,7 @@
             lblHocVi.Name = "lblHocVi";
             lblHocVi.Size = new Size(51, 20);
             lblHocVi.TabIndex = 32;
-            lblHocVi.Text = "H·ªçc v·ªã";
+            lblHocVi.Text = "H?c v?";
             // 
             // txtHocHam
             // 
@@ -210,7 +212,7 @@
             lblHocHam.Name = "lblHocHam";
             lblHocHam.Size = new Size(69, 20);
             lblHocHam.TabIndex = 30;
-            lblHocHam.Text = "H·ªçc h√†m";
+            lblHocHam.Text = "H?c h‡m";
             // 
             // txtChucDanh
             // 
@@ -227,7 +229,7 @@
             lblChucDanh.Name = "lblChucDanh";
             lblChucDanh.Size = new Size(79, 20);
             lblChucDanh.TabIndex = 28;
-            lblChucDanh.Text = "Ch·ª©c danh";
+            lblChucDanh.Text = "Ch?c danh";
             // 
             // txtHeSoLuong
             // 
@@ -244,7 +246,7 @@
             lblHeSoLuong.Name = "lblHeSoLuong";
             lblHeSoLuong.Size = new Size(90, 20);
             lblHeSoLuong.TabIndex = 26;
-            lblHeSoLuong.Text = "H·ªá s·ªë l∆∞∆°ng";
+            lblHeSoLuong.Text = "H? s? luong";
             // 
             // txtCapBac
             // 
@@ -261,7 +263,7 @@
             lblCapBac.Name = "lblCapBac";
             lblCapBac.Size = new Size(63, 20);
             lblCapBac.TabIndex = 24;
-            lblCapBac.Text = "C·∫•p b·∫≠c";
+            lblCapBac.Text = "C?p b?c";
             // 
             // txtChucVu
             // 
@@ -278,7 +280,7 @@
             lblChucVu.Name = "lblChucVu";
             lblChucVu.Size = new Size(61, 20);
             lblChucVu.TabIndex = 22;
-            lblChucVu.Text = "Ch·ª©c v·ª•";
+            lblChucVu.Text = "Ch?c v?";
             // 
             // txtDonViCongTac
             // 
@@ -295,7 +297,7 @@
             lblDonViCongTac.Name = "lblDonViCongTac";
             lblDonViCongTac.Size = new Size(113, 20);
             lblDonViCongTac.TabIndex = 20;
-            lblDonViCongTac.Text = "ƒê∆°n v·ªã c√¥ng t√°c";
+            lblDonViCongTac.Text = "–on v? cÙng t·c";
             // 
             // txtTrinhDoLLCT
             // 
@@ -312,7 +314,7 @@
             lblTrinhDoLLCT.Name = "lblTrinhDoLLCT";
             lblTrinhDoLLCT.Size = new Size(97, 20);
             lblTrinhDoLLCT.TabIndex = 18;
-            lblTrinhDoLLCT.Text = "Tr√¨nh ƒë·ªô LLCT";
+            lblTrinhDoLLCT.Text = "TrÏnh d? LLCT";
             // 
             // txtTrinhDoChuyenMon
             // 
@@ -329,7 +331,7 @@
             lblTrinhDoChuyenMon.Name = "lblTrinhDoChuyenMon";
             lblTrinhDoChuyenMon.Size = new Size(147, 20);
             lblTrinhDoChuyenMon.TabIndex = 16;
-            lblTrinhDoChuyenMon.Text = "Tr√¨nh ƒë·ªô chuy√™n m√¥n";
+            lblTrinhDoChuyenMon.Text = "TrÏnh d? chuyÍn mÙn";
             // 
             // txtSDT
             // 
@@ -346,7 +348,7 @@
             lblSDT.Name = "lblSDT";
             lblSDT.Size = new Size(36, 20);
             lblSDT.TabIndex = 14;
-            lblSDT.Text = "SƒêT";
+            lblSDT.Text = "S–T";
             // 
             // txtTonGiao
             // 
@@ -363,7 +365,7 @@
             lblTonGiao.Name = "lblTonGiao";
             lblTonGiao.Size = new Size(67, 20);
             lblTonGiao.TabIndex = 12;
-            lblTonGiao.Text = "T√¥n gi√°o";
+            lblTonGiao.Text = "TÙn gi·o";
             // 
             // txtDanToc
             // 
@@ -380,7 +382,7 @@
             lblDanToc.Name = "lblDanToc";
             lblDanToc.Size = new Size(61, 20);
             lblDanToc.TabIndex = 10;
-            lblDanToc.Text = "D√¢n t·ªôc";
+            lblDanToc.Text = "D‚n t?c";
             // 
             // txtQueQuan
             // 
@@ -397,7 +399,7 @@
             lblQueQuan.Name = "lblQueQuan";
             lblQueQuan.Size = new Size(73, 20);
             lblQueQuan.TabIndex = 8;
-            lblQueQuan.Text = "Qu√™ qu√°n";
+            lblQueQuan.Text = "QuÍ qu·n";
             // 
             // dtpNgaySinh
             // 
@@ -416,7 +418,7 @@
             lblNgaySinh.Name = "lblNgaySinh";
             lblNgaySinh.Size = new Size(74, 20);
             lblNgaySinh.TabIndex = 6;
-            lblNgaySinh.Text = "Ng√†y sinh";
+            lblNgaySinh.Text = "Ng‡y sinh";
             // 
             // cboGioiTinh
             // 
@@ -435,7 +437,7 @@
             lblGioiTinh.Name = "lblGioiTinh";
             lblGioiTinh.Size = new Size(65, 20);
             lblGioiTinh.TabIndex = 4;
-            lblGioiTinh.Text = "Gi·ªõi t√≠nh";
+            lblGioiTinh.Text = "Gi?i tÌnh";
             // 
             // txtHoTen
             // 
@@ -452,7 +454,7 @@
             lblHoTen.Name = "lblHoTen";
             lblHoTen.Size = new Size(54, 20);
             lblHoTen.TabIndex = 2;
-            lblHoTen.Text = "H·ªç t√™n";
+            lblHoTen.Text = "H? tÍn";
             // 
             // txtMaSoCB
             // 
@@ -469,7 +471,7 @@
             lblMaSoCB.Name = "lblMaSoCB";
             lblMaSoCB.Size = new Size(71, 20);
             lblMaSoCB.TabIndex = 0;
-            lblMaSoCB.Text = "M√£ s·ªë CB";
+            lblMaSoCB.Text = "M„ s? CB";
             // 
             // grpTimKiem
             // 
@@ -484,7 +486,7 @@
             grpTimKiem.Size = new Size(1371, 73);
             grpTimKiem.TabIndex = 2;
             grpTimKiem.TabStop = false;
-            grpTimKiem.Text = "T√¨m ki·∫øm";
+            grpTimKiem.Text = "TÏm ki?m";
             // 
             // btnTim
             // 
@@ -494,8 +496,9 @@
             btnTim.Name = "btnTim";
             btnTim.Size = new Size(86, 33);
             btnTim.TabIndex = 2;
-            btnTim.Text = "T√¨m";
-            btnTim.UseVisualStyleBackColor = true;
+            btnTim.Text = "TÏm";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnTim.UseVisualStyleBackColor = true;
             // 
             // txtTimKiem
             // 
@@ -513,7 +516,7 @@
             lblTimKiem.Name = "lblTimKiem";
             lblTimKiem.Size = new Size(65, 20);
             lblTimKiem.TabIndex = 0;
-            lblTimKiem.Text = "T·ª´ kh√≥a:";
+            lblTimKiem.Text = "T? khÛa:";
             // 
             // dgvGiaoVien
             // 
@@ -555,8 +558,9 @@
             btnHuy.Name = "btnHuy";
             btnHuy.Size = new Size(86, 33);
             btnHuy.TabIndex = 4;
-            btnHuy.Text = "H·ªßy";
-            btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.Text = "H?y";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnHuy.UseVisualStyleBackColor = true;
             // 
             // btnLuu
             // 
@@ -566,8 +570,9 @@
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(86, 33);
             btnLuu.TabIndex = 3;
-            btnLuu.Text = "L∆∞u";
-            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Text = "Luu";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnLuu.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
@@ -577,8 +582,9 @@
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(86, 33);
             btnXoa.TabIndex = 2;
-            btnXoa.Text = "X√≥a";
-            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Text = "XÛa";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnXoa.UseVisualStyleBackColor = true;
             // 
             // btnSua
             // 
@@ -588,8 +594,9 @@
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(86, 33);
             btnSua.TabIndex = 1;
-            btnSua.Text = "S·ª≠a";
-            btnSua.UseVisualStyleBackColor = true;
+            btnSua.Text = "S?a";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnSua.UseVisualStyleBackColor = true;
             // 
             // btnThem
             // 
@@ -599,8 +606,9 @@
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(86, 33);
             btnThem.TabIndex = 0;
-            btnThem.Text = "Th√™m";
-            btnThem.UseVisualStyleBackColor = true;
+            btnThem.Text = "ThÍm";
+            // TODO: property not found on KryptonButton ó review`r`n
+            //btnThem.UseVisualStyleBackColor = true;
             // 
             // frmGiaoVien
             // 
@@ -615,7 +623,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmGiaoVien";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Qu·∫£n l√Ω c√°n b·ªô / gi√°o vi√™n";
+            Text = "Qu?n l˝ c·n b? / gi·o viÍn";
             Load += frmGiaoVien_Load_1;
             grpThongTin.ResumeLayout(false);
             grpThongTin.PerformLayout();
@@ -629,56 +637,61 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
+        private Krypton.Toolkit.KryptonLabel lblTitle;
         private System.Windows.Forms.GroupBox grpThongTin;
-        private System.Windows.Forms.TextBox txtNamDayGioiGanNhat;
-        private System.Windows.Forms.Label lblNamDayGioiGanNhat;
-        private System.Windows.Forms.TextBox txtLinhVucChuyenMon;
-        private System.Windows.Forms.Label lblLinhVucChuyenMon;
-        private System.Windows.Forms.TextBox txtHocVi;
-        private System.Windows.Forms.Label lblHocVi;
-        private System.Windows.Forms.TextBox txtHocHam;
-        private System.Windows.Forms.Label lblHocHam;
-        private System.Windows.Forms.TextBox txtChucDanh;
-        private System.Windows.Forms.Label lblChucDanh;
-        private System.Windows.Forms.TextBox txtHeSoLuong;
-        private System.Windows.Forms.Label lblHeSoLuong;
-        private System.Windows.Forms.TextBox txtCapBac;
-        private System.Windows.Forms.Label lblCapBac;
-        private System.Windows.Forms.TextBox txtChucVu;
-        private System.Windows.Forms.Label lblChucVu;
-        private System.Windows.Forms.TextBox txtDonViCongTac;
-        private System.Windows.Forms.Label lblDonViCongTac;
-        private System.Windows.Forms.TextBox txtTrinhDoLLCT;
-        private System.Windows.Forms.Label lblTrinhDoLLCT;
-        private System.Windows.Forms.TextBox txtTrinhDoChuyenMon;
-        private System.Windows.Forms.Label lblTrinhDoChuyenMon;
-        private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.Label lblSDT;
-        private System.Windows.Forms.TextBox txtTonGiao;
-        private System.Windows.Forms.Label lblTonGiao;
-        private System.Windows.Forms.TextBox txtDanToc;
-        private System.Windows.Forms.Label lblDanToc;
-        private System.Windows.Forms.TextBox txtQueQuan;
-        private System.Windows.Forms.Label lblQueQuan;
-        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.Label lblNgaySinh;
-        private System.Windows.Forms.ComboBox cboGioiTinh;
-        private System.Windows.Forms.Label lblGioiTinh;
-        private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.Label lblHoTen;
-        private System.Windows.Forms.TextBox txtMaSoCB;
-        private System.Windows.Forms.Label lblMaSoCB;
+        private Krypton.Toolkit.KryptonTextBox txtNamDayGioiGanNhat;
+        private Krypton.Toolkit.KryptonLabel lblNamDayGioiGanNhat;
+        private Krypton.Toolkit.KryptonTextBox txtLinhVucChuyenMon;
+        private Krypton.Toolkit.KryptonLabel lblLinhVucChuyenMon;
+        private Krypton.Toolkit.KryptonTextBox txtHocVi;
+        private Krypton.Toolkit.KryptonLabel lblHocVi;
+        private Krypton.Toolkit.KryptonTextBox txtHocHam;
+        private Krypton.Toolkit.KryptonLabel lblHocHam;
+        private Krypton.Toolkit.KryptonTextBox txtChucDanh;
+        private Krypton.Toolkit.KryptonLabel lblChucDanh;
+        private Krypton.Toolkit.KryptonTextBox txtHeSoLuong;
+        private Krypton.Toolkit.KryptonLabel lblHeSoLuong;
+        private Krypton.Toolkit.KryptonTextBox txtCapBac;
+        private Krypton.Toolkit.KryptonLabel lblCapBac;
+        private Krypton.Toolkit.KryptonTextBox txtChucVu;
+        private Krypton.Toolkit.KryptonLabel lblChucVu;
+        private Krypton.Toolkit.KryptonTextBox txtDonViCongTac;
+        private Krypton.Toolkit.KryptonLabel lblDonViCongTac;
+        private Krypton.Toolkit.KryptonTextBox txtTrinhDoLLCT;
+        private Krypton.Toolkit.KryptonLabel lblTrinhDoLLCT;
+        private Krypton.Toolkit.KryptonTextBox txtTrinhDoChuyenMon;
+        private Krypton.Toolkit.KryptonLabel lblTrinhDoChuyenMon;
+        private Krypton.Toolkit.KryptonTextBox txtSDT;
+        private Krypton.Toolkit.KryptonLabel lblSDT;
+        private Krypton.Toolkit.KryptonTextBox txtTonGiao;
+        private Krypton.Toolkit.KryptonLabel lblTonGiao;
+        private Krypton.Toolkit.KryptonTextBox txtDanToc;
+        private Krypton.Toolkit.KryptonLabel lblDanToc;
+        private Krypton.Toolkit.KryptonTextBox txtQueQuan;
+        private Krypton.Toolkit.KryptonLabel lblQueQuan;
+        private Krypton.Toolkit.KryptonDateTimePicker dtpNgaySinh;
+        private Krypton.Toolkit.KryptonLabel lblNgaySinh;
+        private Krypton.Toolkit.KryptonComboBox cboGioiTinh;
+        private Krypton.Toolkit.KryptonLabel lblGioiTinh;
+        private Krypton.Toolkit.KryptonTextBox txtHoTen;
+        private Krypton.Toolkit.KryptonLabel lblHoTen;
+        private Krypton.Toolkit.KryptonTextBox txtMaSoCB;
+        private Krypton.Toolkit.KryptonLabel lblMaSoCB;
         private System.Windows.Forms.GroupBox grpTimKiem;
-        private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Label lblTimKiem;
-        private System.Windows.Forms.DataGridView dgvGiaoVien;
+        private Krypton.Toolkit.KryptonButton btnTim;
+        private Krypton.Toolkit.KryptonTextBox txtTimKiem;
+        private Krypton.Toolkit.KryptonLabel lblTimKiem;
+        private Krypton.Toolkit.KryptonDataGridView dgvGiaoVien;
         private System.Windows.Forms.Panel panelButtons;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
+        private Krypton.Toolkit.KryptonButton btnHuy;
+        private Krypton.Toolkit.KryptonButton btnLuu;
+        private Krypton.Toolkit.KryptonButton btnXoa;
+        private Krypton.Toolkit.KryptonButton btnSua;
+        private Krypton.Toolkit.KryptonButton btnThem;
     }
 }
+
+
+
+
+

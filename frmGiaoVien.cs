@@ -3,11 +3,12 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
+using Krypton.Toolkit;
 
 
 namespace frmGiaoVien
 {
-    public partial class frmGiaoVien : Form
+    public partial class frmGiaoVien : KryptonForm
     {
         // TODO: sửa lại tên server cho đúng với máy bạn
         private readonly string connectionString =
