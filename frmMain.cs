@@ -19,9 +19,14 @@ namespace frmGiaoVien
             };
 
             mnuGiaoVien.Click += (s, e) => OpenChildForm(new frmGiaoVien());
+            mnuSangKien.Click += (s, e) => OpenChildForm(new frmSangKien());
             mnuHoiGiang.Click += (s, e) => OpenChildForm(new frmHoiGiang());
             mnuKetQua.Click += (s, e) => OpenChildForm(new frmKetQuaHoiGiang());
-            mnuThongKeTongHop.Click += (s, e) => OpenChildForm(new frmThongKe());
+            mnuLichGiangDay.Click += (s, e) => OpenChildForm(new frmLichGiangDay());
+            mnuLichTheoGiangVien.Click += (s, e) => OpenChildForm(new frmLichTheoGiangVien());
+            mnuThongKeTongHop.Click += (s, e) => OpenChildForm(new frmThongKeTongHopMoi());
+            mnuThongKeMoRong.Click += (s, e) => OpenChildForm(new frmThongKe());
+            mnuThongKeKetHop.Click += (s, e) => OpenChildForm(new frmThongKeGV());
         }
 
         private void OpenChildForm(Form frm)

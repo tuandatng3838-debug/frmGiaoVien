@@ -3,15 +3,18 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
+using Krypton.Toolkit;
 
 
 namespace frmGiaoVien
 {
-    public partial class frmKetQuaHoiGiang : Form
+    public partial class frmKetQuaHoiGiang : KryptonForm
     {
         // Sửa YOUR_SERVER_NAME cho đúng
         private readonly string connectionString =
-    ConfigurationManager.ConnectionStrings["QLHoiGiang"].ConnectionString;
+    ConfigurationManager.ConnectionStrings["DefaultConnection"]?.ConnectionString
+    ?? ConfigurationManager.ConnectionStrings["QLHoiGiang"]?.ConnectionString
+    ?? "Data Source=TUANDAT\\SQLEXPRESS;Initial Catalog=QLHoiGiang;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;";
 
         private string trangThai = ""; // "", "them", "sua"
 

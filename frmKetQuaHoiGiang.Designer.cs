@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+using Krypton.Toolkit;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace frmGiaoVien
 {
@@ -19,615 +21,453 @@ namespace frmGiaoVien
 
         private void InitializeComponent()
         {
-            lblTitle = new Label();
-            grpThongTin = new GroupBox();
-            txtCapThucHien = new TextBox();
-            lblCapThucHien = new Label();
-            txtTenBai = new TextBox();
-            lblTenBai = new Label();
-            txtDonVi = new TextBox();
-            lblDonVi = new Label();
-            txtCapBac = new TextBox();
-            lblCapBac = new Label();
-            txtHoTenGV = new TextBox();
-            lblHoTenGV = new Label();
-            cboHoiGiang = new ComboBox();
-            lblHoiGiang = new Label();
-            grpDiem = new GroupBox();
-            cboGiaiThuong = new ComboBox();
-            lblGiaiThuong = new Label();
-            txtTongDiem = new TextBox();
-            lblTongDiem = new Label();
-            txtDiemThucHanhTB = new TextBox();
-            lblDiemThucHanhTB = new Label();
-            txtDiemThucHanh5 = new TextBox();
-            lblDiemThucHanh5 = new Label();
-            txtDiemThucHanh4 = new TextBox();
-            lblDiemThucHanh4 = new Label();
-            txtDiemThucHanh3 = new TextBox();
-            lblDiemThucHanh3 = new Label();
-            txtDiemThucHanh2 = new TextBox();
-            lblDiemThucHanh2 = new Label();
-            txtDiemThucHanh1 = new TextBox();
-            lblDiemThucHanh1 = new Label();
-            txtDiemGioiThieu = new TextBox();
-            lblDiemGioiThieu = new Label();
-            txtDiemHieuBiet = new TextBox();
-            lblDiemHieuBiet = new Label();
-            grpTimKiem = new GroupBox();
-            btnTim = new Button();
-            txtTimKiem = new TextBox();
-            lblTimKiem = new Label();
-            dgvKetQua = new DataGridView();
-            panelButtons = new Panel();
-            btnHuy = new Button();
-            btnLuu = new Button();
-            btnXoa = new Button();
-            btnSua = new Button();
-            btnThem = new Button();
+            pnlMain = new KryptonPanel();
+            layoutMain = new TableLayoutPanel();
+            lblTitle = new KryptonLabel();
+            grpThongTin = new KryptonGroupBox();
+            tableInfo = new TableLayoutPanel();
+            lblHoiGiang = new KryptonLabel();
+            cboHoiGiang = new KryptonComboBox();
+            lblHoTenGV = new KryptonLabel();
+            txtHoTenGV = new KryptonTextBox();
+            lblCapBac = new KryptonLabel();
+            txtCapBac = new KryptonTextBox();
+            lblDonVi = new KryptonLabel();
+            txtDonVi = new KryptonTextBox();
+            lblTenBai = new KryptonLabel();
+            txtTenBai = new KryptonTextBox();
+            lblCapThucHien = new KryptonLabel();
+            txtCapThucHien = new KryptonTextBox();
+            grpDiem = new KryptonGroupBox();
+            tableScore = new TableLayoutPanel();
+            lblDiemHieuBiet = new KryptonLabel();
+            txtDiemHieuBiet = new KryptonTextBox();
+            lblDiemGioiThieu = new KryptonLabel();
+            txtDiemGioiThieu = new KryptonTextBox();
+            lblP1 = new KryptonLabel();
+            txtDiemThucHanh1 = new KryptonTextBox();
+            lblP2 = new KryptonLabel();
+            txtDiemThucHanh2 = new KryptonTextBox();
+            lblP3 = new KryptonLabel();
+            txtDiemThucHanh3 = new KryptonTextBox();
+            lblP4 = new KryptonLabel();
+            txtDiemThucHanh4 = new KryptonTextBox();
+            lblP5 = new KryptonLabel();
+            txtDiemThucHanh5 = new KryptonTextBox();
+            lblDiemThucHanhTB = new KryptonLabel();
+            txtDiemThucHanhTB = new KryptonTextBox();
+            lblTongDiem = new KryptonLabel();
+            txtTongDiem = new KryptonTextBox();
+            lblGiaiThuong = new KryptonLabel();
+            cboGiaiThuong = new KryptonComboBox();
+            grpSearch = new KryptonGroupBox();
+            searchLayout = new TableLayoutPanel();
+            lblTim = new KryptonLabel();
+            txtTimKiem = new KryptonTextBox();
+            btnTim = new KryptonButton();
+            dgvKetQua = new KryptonDataGridView();
+            buttonPanel = new TableLayoutPanel();
+            flowButtons = new FlowLayoutPanel();
+            btnThem = new KryptonButton();
+            btnSua = new KryptonButton();
+            btnXoa = new KryptonButton();
+            btnLuu = new KryptonButton();
+            btnHuy = new KryptonButton();
+            ((System.ComponentModel.ISupportInitialize)pnlMain).BeginInit();
+            pnlMain.SuspendLayout();
+            layoutMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)grpThongTin).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grpThongTin.Panel).BeginInit();
+            grpThongTin.Panel.SuspendLayout();
             grpThongTin.SuspendLayout();
+            tableInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)cboHoiGiang).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grpDiem).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grpDiem.Panel).BeginInit();
+            grpDiem.Panel.SuspendLayout();
             grpDiem.SuspendLayout();
-            grpTimKiem.SuspendLayout();
+            tableScore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)cboGiaiThuong).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grpSearch).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grpSearch.Panel).BeginInit();
+            grpSearch.Panel.SuspendLayout();
+            grpSearch.SuspendLayout();
+            searchLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvKetQua).BeginInit();
-            panelButtons.SuspendLayout();
+            buttonPanel.SuspendLayout();
+            flowButtons.SuspendLayout();
             SuspendLayout();
+            // 
+            // pnlMain
+            // 
+            pnlMain.Dock = DockStyle.Fill;
+            pnlMain.Padding = new Padding(16);
+            pnlMain.Controls.Add(layoutMain);
+            // 
+            // layoutMain
+            // 
+            layoutMain.ColumnCount = 1;
+            layoutMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            layoutMain.Dock = DockStyle.Fill;
+            layoutMain.RowCount = 6;
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            layoutMain.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            layoutMain.Controls.Add(lblTitle, 0, 0);
+            layoutMain.Controls.Add(grpThongTin, 0, 1);
+            layoutMain.Controls.Add(grpDiem, 0, 2);
+            layoutMain.Controls.Add(grpSearch, 0, 3);
+            layoutMain.Controls.Add(dgvKetQua, 0, 4);
+            layoutMain.Controls.Add(buttonPanel, 0, 5);
             // 
             // lblTitle
             // 
+            lblTitle.AutoSize = false;
             lblTitle.Dock = DockStyle.Top;
-            lblTitle.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            lblTitle.Location = new Point(0, 0);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(1371, 53);
-            lblTitle.TabIndex = 0;
+            lblTitle.Height = 40;
             lblTitle.Text = "KẾT QUẢ HỘI GIẢNG";
-            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+            lblTitle.StateCommon.ShortText.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            lblTitle.StateCommon.ShortText.TextH = PaletteRelativeAlign.Center;
+            lblTitle.StateCommon.ShortText.TextV = PaletteRelativeAlign.Center;
+            lblTitle.Margin = new Padding(0, 0, 0, 10);
             // 
             // grpThongTin
             // 
-            grpThongTin.Controls.Add(txtCapThucHien);
-            grpThongTin.Controls.Add(lblCapThucHien);
-            grpThongTin.Controls.Add(txtTenBai);
-            grpThongTin.Controls.Add(lblTenBai);
-            grpThongTin.Controls.Add(txtDonVi);
-            grpThongTin.Controls.Add(lblDonVi);
-            grpThongTin.Controls.Add(txtCapBac);
-            grpThongTin.Controls.Add(lblCapBac);
-            grpThongTin.Controls.Add(txtHoTenGV);
-            grpThongTin.Controls.Add(lblHoTenGV);
-            grpThongTin.Controls.Add(cboHoiGiang);
-            grpThongTin.Controls.Add(lblHoiGiang);
-            grpThongTin.Dock = DockStyle.Top;
-            grpThongTin.Location = new Point(0, 53);
-            grpThongTin.Margin = new Padding(3, 4, 3, 4);
-            grpThongTin.Name = "grpThongTin";
-            grpThongTin.Padding = new Padding(3, 4, 3, 4);
-            grpThongTin.Size = new Size(1371, 147);
-            grpThongTin.TabIndex = 1;
-            grpThongTin.TabStop = false;
             grpThongTin.Text = "Thông tin hội giảng";
+            grpThongTin.Panel.Padding = new Padding(10);
+            grpThongTin.Dock = DockStyle.Top;
+            grpThongTin.Margin = new Padding(0, 0, 0, 10);
+            grpThongTin.Panel.Controls.Add(tableInfo);
             // 
-            // txtCapThucHien
+            // tableInfo
             // 
-            txtCapThucHien.Location = new Point(1109, 93);
-            txtCapThucHien.Margin = new Padding(3, 4, 3, 4);
-            txtCapThucHien.Name = "txtCapThucHien";
-            txtCapThucHien.ReadOnly = true;
-            txtCapThucHien.Size = new Size(228, 27);
-            txtCapThucHien.TabIndex = 6;
+            tableInfo.ColumnCount = 4;
+            tableInfo.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            tableInfo.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
+            tableInfo.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15F));
+            tableInfo.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
+            tableInfo.Dock = DockStyle.Fill;
+            tableInfo.RowCount = 3;
+            tableInfo.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableInfo.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableInfo.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableInfo.Padding = new Padding(5);
+            tableInfo.Controls.Add(lblHoiGiang, 0, 0);
+            tableInfo.Controls.Add(cboHoiGiang, 1, 0);
+            tableInfo.Controls.Add(lblHoTenGV, 2, 0);
+            tableInfo.Controls.Add(txtHoTenGV, 3, 0);
+            tableInfo.Controls.Add(lblCapBac, 0, 1);
+            tableInfo.Controls.Add(txtCapBac, 1, 1);
+            tableInfo.Controls.Add(lblDonVi, 2, 1);
+            tableInfo.Controls.Add(txtDonVi, 3, 1);
+            tableInfo.Controls.Add(lblTenBai, 0, 2);
+            tableInfo.Controls.Add(txtTenBai, 1, 2);
+            tableInfo.Controls.Add(lblCapThucHien, 2, 2);
+            tableInfo.Controls.Add(txtCapThucHien, 3, 2);
             // 
-            // lblCapThucHien
+            // lblHoiGiang
             // 
-            lblCapThucHien.AutoSize = true;
-            lblCapThucHien.Location = new Point(1006, 97);
-            lblCapThucHien.Name = "lblCapThucHien";
-            lblCapThucHien.Size = new Size(100, 20);
-            lblCapThucHien.TabIndex = 10;
-            lblCapThucHien.Text = "Cấp thực hiện";
-            // 
-            // txtTenBai
-            // 
-            txtTenBai.Location = new Point(469, 93);
-            txtTenBai.Margin = new Padding(3, 4, 3, 4);
-            txtTenBai.Name = "txtTenBai";
-            txtTenBai.ReadOnly = true;
-            txtTenBai.Size = new Size(525, 27);
-            txtTenBai.TabIndex = 5;
-            // 
-            // lblTenBai
-            // 
-            lblTenBai.AutoSize = true;
-            lblTenBai.Location = new Point(389, 97);
-            lblTenBai.Name = "lblTenBai";
-            lblTenBai.Size = new Size(57, 20);
-            lblTenBai.TabIndex = 8;
-            lblTenBai.Text = "Tên bài";
-            // 
-            // txtDonVi
-            // 
-            txtDonVi.Location = new Point(1109, 41);
-            txtDonVi.Margin = new Padding(3, 4, 3, 4);
-            txtDonVi.Name = "txtDonVi";
-            txtDonVi.ReadOnly = true;
-            txtDonVi.Size = new Size(228, 27);
-            txtDonVi.TabIndex = 4;
-            // 
-            // lblDonVi
-            // 
-            lblDonVi.AutoSize = true;
-            lblDonVi.Location = new Point(1051, 45);
-            lblDonVi.Name = "lblDonVi";
-            lblDonVi.Size = new Size(52, 20);
-            lblDonVi.TabIndex = 6;
-            lblDonVi.Text = "Đơn vị";
-            // 
-            // txtCapBac
-            // 
-            txtCapBac.Location = new Point(823, 41);
-            txtCapBac.Margin = new Padding(3, 4, 3, 4);
-            txtCapBac.Name = "txtCapBac";
-            txtCapBac.ReadOnly = true;
-            txtCapBac.Size = new Size(205, 27);
-            txtCapBac.TabIndex = 3;
-            // 
-            // lblCapBac
-            // 
-            lblCapBac.AutoSize = true;
-            lblCapBac.Location = new Point(754, 45);
-            lblCapBac.Name = "lblCapBac";
-            lblCapBac.Size = new Size(63, 20);
-            lblCapBac.TabIndex = 4;
-            lblCapBac.Text = "Cấp bậc";
-            // 
-            // txtHoTenGV
-            // 
-            txtHoTenGV.Location = new Point(469, 41);
-            txtHoTenGV.Margin = new Padding(3, 4, 3, 4);
-            txtHoTenGV.Name = "txtHoTenGV";
-            txtHoTenGV.ReadOnly = true;
-            txtHoTenGV.Size = new Size(262, 27);
-            txtHoTenGV.TabIndex = 2;
-            // 
-            // lblHoTenGV
-            // 
-            lblHoTenGV.AutoSize = true;
-            lblHoTenGV.Location = new Point(389, 45);
-            lblHoTenGV.Name = "lblHoTenGV";
-            lblHoTenGV.Size = new Size(54, 20);
-            lblHoTenGV.TabIndex = 2;
-            lblHoTenGV.Text = "Họ tên";
+            lblHoiGiang.Text = "Chọn hội giảng";
+            lblHoiGiang.Margin = new Padding(5);
             // 
             // cboHoiGiang
             // 
             cboHoiGiang.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboHoiGiang.FormattingEnabled = true;
-            cboHoiGiang.Location = new Point(126, 41);
-            cboHoiGiang.Margin = new Padding(3, 4, 3, 4);
-            cboHoiGiang.Name = "cboHoiGiang";
-            cboHoiGiang.Size = new Size(239, 28);
-            cboHoiGiang.TabIndex = 1;
+            cboHoiGiang.Margin = new Padding(5);
             // 
-            // lblHoiGiang
+            // lblHoTenGV
             // 
-            lblHoiGiang.AutoSize = true;
-            lblHoiGiang.Location = new Point(23, 45);
-            lblHoiGiang.Name = "lblHoiGiang";
-            lblHoiGiang.Size = new Size(110, 20);
-            lblHoiGiang.TabIndex = 0;
-            lblHoiGiang.Text = "Chọn hội giảng";
+            lblHoTenGV.Text = "Họ tên GV";
+            lblHoTenGV.Margin = new Padding(5);
+            // 
+            // txtHoTenGV
+            // 
+            txtHoTenGV.Margin = new Padding(5);
+            txtHoTenGV.ReadOnly = true;
+            // 
+            // lblCapBac
+            // 
+            lblCapBac.Text = "Cấp bậc";
+            lblCapBac.Margin = new Padding(5);
+            // 
+            // txtCapBac
+            // 
+            txtCapBac.Margin = new Padding(5);
+            txtCapBac.ReadOnly = true;
+            // 
+            // lblDonVi
+            // 
+            lblDonVi.Text = "Đơn vị";
+            lblDonVi.Margin = new Padding(5);
+            // 
+            // txtDonVi
+            // 
+            txtDonVi.Margin = new Padding(5);
+            txtDonVi.ReadOnly = true;
+            // 
+            // lblTenBai
+            // 
+            lblTenBai.Text = "Tên bài";
+            lblTenBai.Margin = new Padding(5);
+            // 
+            // txtTenBai
+            // 
+            txtTenBai.Margin = new Padding(5);
+            txtTenBai.ReadOnly = true;
+            // 
+            // lblCapThucHien
+            // 
+            lblCapThucHien.Text = "Cấp thực hiện";
+            lblCapThucHien.Margin = new Padding(5);
+            // 
+            // txtCapThucHien
+            // 
+            txtCapThucHien.Margin = new Padding(5);
+            txtCapThucHien.ReadOnly = true;
             // 
             // grpDiem
             // 
-            grpDiem.Controls.Add(cboGiaiThuong);
-            grpDiem.Controls.Add(lblGiaiThuong);
-            grpDiem.Controls.Add(txtTongDiem);
-            grpDiem.Controls.Add(lblTongDiem);
-            grpDiem.Controls.Add(txtDiemThucHanhTB);
-            grpDiem.Controls.Add(lblDiemThucHanhTB);
-            grpDiem.Controls.Add(txtDiemThucHanh5);
-            grpDiem.Controls.Add(lblDiemThucHanh5);
-            grpDiem.Controls.Add(txtDiemThucHanh4);
-            grpDiem.Controls.Add(lblDiemThucHanh4);
-            grpDiem.Controls.Add(txtDiemThucHanh3);
-            grpDiem.Controls.Add(lblDiemThucHanh3);
-            grpDiem.Controls.Add(txtDiemThucHanh2);
-            grpDiem.Controls.Add(lblDiemThucHanh2);
-            grpDiem.Controls.Add(txtDiemThucHanh1);
-            grpDiem.Controls.Add(lblDiemThucHanh1);
-            grpDiem.Controls.Add(txtDiemGioiThieu);
-            grpDiem.Controls.Add(lblDiemGioiThieu);
-            grpDiem.Controls.Add(txtDiemHieuBiet);
-            grpDiem.Controls.Add(lblDiemHieuBiet);
-            grpDiem.Dock = DockStyle.Top;
-            grpDiem.Location = new Point(0, 200);
-            grpDiem.Margin = new Padding(3, 4, 3, 4);
-            grpDiem.Name = "grpDiem";
-            grpDiem.Padding = new Padding(3, 4, 3, 4);
-            grpDiem.Size = new Size(1371, 187);
-            grpDiem.TabIndex = 2;
-            grpDiem.TabStop = false;
             grpDiem.Text = "Điểm các phần thi";
+            grpDiem.Dock = DockStyle.Top;
+            grpDiem.Margin = new Padding(0, 0, 0, 10);
+            grpDiem.Panel.Padding = new Padding(10);
+            grpDiem.Panel.Controls.Add(tableScore);
             // 
-            // cboGiaiThuong
+            // tableScore
             // 
-            cboGiaiThuong.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboGiaiThuong.FormattingEnabled = true;
-            cboGiaiThuong.Location = new Point(1051, 120);
-            cboGiaiThuong.Margin = new Padding(3, 4, 3, 4);
-            cboGiaiThuong.Name = "cboGiaiThuong";
-            cboGiaiThuong.Size = new Size(285, 28);
-            cboGiaiThuong.TabIndex = 10;
+            tableScore.ColumnCount = 6;
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            tableScore.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableScore.Dock = DockStyle.Fill;
+            tableScore.RowCount = 4;
+            tableScore.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableScore.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableScore.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableScore.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            tableScore.Padding = new Padding(5);
+            tableScore.Controls.Add(lblDiemHieuBiet, 0, 0);
+            tableScore.Controls.Add(txtDiemHieuBiet, 1, 0);
+            tableScore.Controls.Add(lblDiemGioiThieu, 2, 0);
+            tableScore.Controls.Add(txtDiemGioiThieu, 3, 0);
+            tableScore.Controls.Add(lblP1, 0, 1);
+            tableScore.Controls.Add(txtDiemThucHanh1, 1, 1);
+            tableScore.Controls.Add(lblP2, 2, 1);
+            tableScore.Controls.Add(txtDiemThucHanh2, 3, 1);
+            tableScore.Controls.Add(lblP3, 4, 1);
+            tableScore.Controls.Add(txtDiemThucHanh3, 5, 1);
+            tableScore.Controls.Add(lblP4, 0, 2);
+            tableScore.Controls.Add(txtDiemThucHanh4, 1, 2);
+            tableScore.Controls.Add(lblP5, 2, 2);
+            tableScore.Controls.Add(txtDiemThucHanh5, 3, 2);
+            tableScore.Controls.Add(lblDiemThucHanhTB, 0, 3);
+            tableScore.Controls.Add(txtDiemThucHanhTB, 1, 3);
+            tableScore.Controls.Add(lblTongDiem, 2, 3);
+            tableScore.Controls.Add(txtTongDiem, 3, 3);
+            tableScore.Controls.Add(lblGiaiThuong, 4, 3);
+            tableScore.Controls.Add(cboGiaiThuong, 5, 3);
             // 
-            // lblGiaiThuong
-            // 
-            lblGiaiThuong.AutoSize = true;
-            lblGiaiThuong.Location = new Point(960, 124);
-            lblGiaiThuong.Name = "lblGiaiThuong";
-            lblGiaiThuong.Size = new Size(87, 20);
-            lblGiaiThuong.TabIndex = 18;
-            lblGiaiThuong.Text = "Giải thưởng";
-            // 
-            // txtTongDiem
-            // 
-            txtTongDiem.Location = new Point(731, 120);
-            txtTongDiem.Margin = new Padding(3, 4, 3, 4);
-            txtTongDiem.Name = "txtTongDiem";
-            txtTongDiem.ReadOnly = true;
-            txtTongDiem.Size = new Size(205, 27);
-            txtTongDiem.TabIndex = 9;
-            // 
-            // lblTongDiem
-            // 
-            lblTongDiem.AutoSize = true;
-            lblTongDiem.Location = new Point(651, 124);
-            lblTongDiem.Name = "lblTongDiem";
-            lblTongDiem.Size = new Size(81, 20);
-            lblTongDiem.TabIndex = 16;
-            lblTongDiem.Text = "Tổng điểm";
-            // 
-            // txtDiemThucHanhTB
-            // 
-            txtDiemThucHanhTB.Location = new Point(469, 120);
-            txtDiemThucHanhTB.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanhTB.Name = "txtDiemThucHanhTB";
+            // Score labels/controls
+            lblDiemHieuBiet.Text = "Hiểu biết";
+            lblDiemHieuBiet.Margin = new Padding(5);
+            txtDiemHieuBiet.Margin = new Padding(5);
+            lblDiemGioiThieu.Text = "Giới thiệu";
+            lblDiemGioiThieu.Margin = new Padding(5);
+            txtDiemGioiThieu.Margin = new Padding(5);
+            lblP1.Text = "P1";
+            lblP1.Margin = new Padding(5);
+            txtDiemThucHanh1.Margin = new Padding(5);
+            lblP2.Text = "P2";
+            lblP2.Margin = new Padding(5);
+            txtDiemThucHanh2.Margin = new Padding(5);
+            lblP3.Text = "P3";
+            lblP3.Margin = new Padding(5);
+            txtDiemThucHanh3.Margin = new Padding(5);
+            lblP4.Text = "P4";
+            lblP4.Margin = new Padding(5);
+            txtDiemThucHanh4.Margin = new Padding(5);
+            lblP5.Text = "P5";
+            lblP5.Margin = new Padding(5);
+            txtDiemThucHanh5.Margin = new Padding(5);
+            lblDiemThucHanhTB.Text = "Điểm TH TB";
+            lblDiemThucHanhTB.Margin = new Padding(5);
+            txtDiemThucHanhTB.Margin = new Padding(5);
             txtDiemThucHanhTB.ReadOnly = true;
-            txtDiemThucHanhTB.Size = new Size(148, 27);
-            txtDiemThucHanhTB.TabIndex = 8;
+            lblTongDiem.Text = "Tổng điểm";
+            lblTongDiem.Margin = new Padding(5);
+            txtTongDiem.Margin = new Padding(5);
+            txtTongDiem.ReadOnly = true;
+            lblGiaiThuong.Text = "Giải thưởng";
+            lblGiaiThuong.Margin = new Padding(5);
+            cboGiaiThuong.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboGiaiThuong.Margin = new Padding(5);
             // 
-            // lblDiemThucHanhTB
+            // grpSearch
             // 
-            lblDiemThucHanhTB.AutoSize = true;
-            lblDiemThucHanhTB.Location = new Point(331, 124);
-            lblDiemThucHanhTB.Name = "lblDiemThucHanhTB";
-            lblDiemThucHanhTB.Size = new Size(152, 20);
-            lblDiemThucHanhTB.TabIndex = 14;
-            lblDiemThucHanhTB.Text = "Điểm TH (TB 5 phiếu)";
+            grpSearch.Text = "Tìm kiếm";
+            grpSearch.Dock = DockStyle.Top;
+            grpSearch.Margin = new Padding(0, 0, 0, 10);
+            grpSearch.Panel.Controls.Add(searchLayout);
             // 
-            // txtDiemThucHanh5
+            // searchLayout
             // 
-            txtDiemThucHanh5.Location = new Point(1051, 73);
-            txtDiemThucHanh5.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanh5.Name = "txtDiemThucHanh5";
-            txtDiemThucHanh5.Size = new Size(68, 27);
-            txtDiemThucHanh5.TabIndex = 7;
+            searchLayout.ColumnCount = 3;
+            searchLayout.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            searchLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            searchLayout.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            searchLayout.Dock = DockStyle.Fill;
+            searchLayout.Padding = new Padding(10);
+            searchLayout.Controls.Add(lblTim, 0, 0);
+            searchLayout.Controls.Add(txtTimKiem, 1, 0);
+            searchLayout.Controls.Add(btnTim, 2, 0);
             // 
-            // lblDiemThucHanh5
-            // 
-            lblDiemThucHanh5.AutoSize = true;
-            lblDiemThucHanh5.Location = new Point(1017, 77);
-            lblDiemThucHanh5.Name = "lblDiemThucHanh5";
-            lblDiemThucHanh5.Size = new Size(25, 20);
-            lblDiemThucHanh5.TabIndex = 12;
-            lblDiemThucHanh5.Text = "P5";
-            // 
-            // txtDiemThucHanh4
-            // 
-            txtDiemThucHanh4.Location = new Point(937, 73);
-            txtDiemThucHanh4.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanh4.Name = "txtDiemThucHanh4";
-            txtDiemThucHanh4.Size = new Size(68, 27);
-            txtDiemThucHanh4.TabIndex = 6;
-            // 
-            // lblDiemThucHanh4
-            // 
-            lblDiemThucHanh4.AutoSize = true;
-            lblDiemThucHanh4.Location = new Point(903, 77);
-            lblDiemThucHanh4.Name = "lblDiemThucHanh4";
-            lblDiemThucHanh4.Size = new Size(25, 20);
-            lblDiemThucHanh4.TabIndex = 10;
-            lblDiemThucHanh4.Text = "P4";
-            // 
-            // txtDiemThucHanh3
-            // 
-            txtDiemThucHanh3.Location = new Point(823, 73);
-            txtDiemThucHanh3.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanh3.Name = "txtDiemThucHanh3";
-            txtDiemThucHanh3.Size = new Size(68, 27);
-            txtDiemThucHanh3.TabIndex = 5;
-            // 
-            // lblDiemThucHanh3
-            // 
-            lblDiemThucHanh3.AutoSize = true;
-            lblDiemThucHanh3.Location = new Point(789, 77);
-            lblDiemThucHanh3.Name = "lblDiemThucHanh3";
-            lblDiemThucHanh3.Size = new Size(25, 20);
-            lblDiemThucHanh3.TabIndex = 8;
-            lblDiemThucHanh3.Text = "P3";
-            // 
-            // txtDiemThucHanh2
-            // 
-            txtDiemThucHanh2.Location = new Point(709, 73);
-            txtDiemThucHanh2.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanh2.Name = "txtDiemThucHanh2";
-            txtDiemThucHanh2.Size = new Size(68, 27);
-            txtDiemThucHanh2.TabIndex = 4;
-            // 
-            // lblDiemThucHanh2
-            // 
-            lblDiemThucHanh2.AutoSize = true;
-            lblDiemThucHanh2.Location = new Point(674, 77);
-            lblDiemThucHanh2.Name = "lblDiemThucHanh2";
-            lblDiemThucHanh2.Size = new Size(25, 20);
-            lblDiemThucHanh2.TabIndex = 6;
-            lblDiemThucHanh2.Text = "P2";
-            // 
-            // txtDiemThucHanh1
-            // 
-            txtDiemThucHanh1.Location = new Point(594, 73);
-            txtDiemThucHanh1.Margin = new Padding(3, 4, 3, 4);
-            txtDiemThucHanh1.Name = "txtDiemThucHanh1";
-            txtDiemThucHanh1.Size = new Size(68, 27);
-            txtDiemThucHanh1.TabIndex = 3;
-            // 
-            // lblDiemThucHanh1
-            // 
-            lblDiemThucHanh1.AutoSize = true;
-            lblDiemThucHanh1.Location = new Point(560, 77);
-            lblDiemThucHanh1.Name = "lblDiemThucHanh1";
-            lblDiemThucHanh1.Size = new Size(25, 20);
-            lblDiemThucHanh1.TabIndex = 4;
-            lblDiemThucHanh1.Text = "P1";
-            // 
-            // txtDiemGioiThieu
-            // 
-            txtDiemGioiThieu.Location = new Point(348, 73);
-            txtDiemGioiThieu.Margin = new Padding(3, 4, 3, 4);
-            txtDiemGioiThieu.Name = "txtDiemGioiThieu";
-            txtDiemGioiThieu.Size = new Size(188, 27);
-            txtDiemGioiThieu.TabIndex = 2;
-            // 
-            // lblDiemGioiThieu
-            // 
-            lblDiemGioiThieu.AutoSize = true;
-            lblDiemGioiThieu.Location = new Point(23, 77);
-            lblDiemGioiThieu.Name = "lblDiemGioiThieu";
-            lblDiemGioiThieu.Size = new Size(319, 20);
-            lblDiemGioiThieu.TabIndex = 2;
-            lblDiemGioiThieu.Text = "Phần thi giới thiệu GV và hồ sơ bài (điểm tổng)";
-            // 
-            // txtDiemHieuBiet
-            // 
-            txtDiemHieuBiet.Location = new Point(331, 35);
-            txtDiemHieuBiet.Margin = new Padding(3, 4, 3, 4);
-            txtDiemHieuBiet.Name = "txtDiemHieuBiet";
-            txtDiemHieuBiet.Size = new Size(205, 27);
-            txtDiemHieuBiet.TabIndex = 1;
-            // 
-            // lblDiemHieuBiet
-            // 
-            lblDiemHieuBiet.AutoSize = true;
-            lblDiemHieuBiet.Location = new Point(23, 39);
-            lblDiemHieuBiet.Name = "lblDiemHieuBiet";
-            lblDiemHieuBiet.Size = new Size(244, 20);
-            lblDiemHieuBiet.TabIndex = 0;
-            lblDiemHieuBiet.Text = "Phần thi hiểu biết (điểm tổng phần)";
-            // 
-            // grpTimKiem
-            // 
-            grpTimKiem.Controls.Add(btnTim);
-            grpTimKiem.Controls.Add(txtTimKiem);
-            grpTimKiem.Controls.Add(lblTimKiem);
-            grpTimKiem.Dock = DockStyle.Top;
-            grpTimKiem.Location = new Point(0, 387);
-            grpTimKiem.Margin = new Padding(3, 4, 3, 4);
-            grpTimKiem.Name = "grpTimKiem";
-            grpTimKiem.Padding = new Padding(3, 4, 3, 4);
-            grpTimKiem.Size = new Size(1371, 73);
-            grpTimKiem.TabIndex = 3;
-            grpTimKiem.TabStop = false;
-            grpTimKiem.Text = "Tìm kiếm";
-            // 
-            // btnTim
-            // 
-            btnTim.Anchor = AnchorStyles.Right;
-            btnTim.Location = new Point(1272, 27);
-            btnTim.Margin = new Padding(3, 4, 3, 4);
-            btnTim.Name = "btnTim";
-            btnTim.Size = new Size(86, 33);
-            btnTim.TabIndex = 2;
+            lblTim.Text = "Từ khóa:";
+            lblTim.Margin = new Padding(5);
+            txtTimKiem.Margin = new Padding(5);
             btnTim.Text = "Tìm";
-            btnTim.UseVisualStyleBackColor = true;
-            // 
-            // txtTimKiem
-            // 
-            txtTimKiem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtTimKiem.Location = new Point(91, 28);
-            txtTimKiem.Margin = new Padding(3, 4, 3, 4);
-            txtTimKiem.Name = "txtTimKiem";
-            txtTimKiem.Size = new Size(1173, 27);
-            txtTimKiem.TabIndex = 1;
-            // 
-            // lblTimKiem
-            // 
-            lblTimKiem.AutoSize = true;
-            lblTimKiem.Location = new Point(23, 32);
-            lblTimKiem.Name = "lblTimKiem";
-            lblTimKiem.Size = new Size(65, 20);
-            lblTimKiem.TabIndex = 0;
-            lblTimKiem.Text = "Từ khóa:";
+            btnTim.Margin = new Padding(5);
+            btnTim.Width = 90;
             // 
             // dgvKetQua
             // 
+            dgvKetQua.Dock = DockStyle.Fill;
             dgvKetQua.AllowUserToAddRows = false;
             dgvKetQua.AllowUserToDeleteRows = false;
-            dgvKetQua.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvKetQua.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvKetQua.Dock = DockStyle.Fill;
-            dgvKetQua.Location = new Point(0, 460);
-            dgvKetQua.Margin = new Padding(3, 4, 3, 4);
-            dgvKetQua.MultiSelect = false;
-            dgvKetQua.Name = "dgvKetQua";
-            dgvKetQua.ReadOnly = true;
-            dgvKetQua.RowHeadersWidth = 51;
-            dgvKetQua.RowTemplate.Height = 25;
             dgvKetQua.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvKetQua.Size = new Size(1371, 340);
-            dgvKetQua.TabIndex = 4;
+            dgvKetQua.MultiSelect = false;
+            dgvKetQua.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvKetQua.Margin = new Padding(0, 0, 0, 10);
             // 
-            // panelButtons
+            // buttonPanel
             // 
-            panelButtons.Controls.Add(btnHuy);
-            panelButtons.Controls.Add(btnLuu);
-            panelButtons.Controls.Add(btnXoa);
-            panelButtons.Controls.Add(btnSua);
-            panelButtons.Controls.Add(btnThem);
-            panelButtons.Dock = DockStyle.Bottom;
-            panelButtons.Location = new Point(0, 800);
-            panelButtons.Margin = new Padding(3, 4, 3, 4);
-            panelButtons.Name = "panelButtons";
-            panelButtons.Size = new Size(1371, 67);
-            panelButtons.TabIndex = 5;
+            buttonPanel.ColumnCount = 1;
+            buttonPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            buttonPanel.Dock = DockStyle.Fill;
+            buttonPanel.Controls.Add(flowButtons, 0, 0);
             // 
-            // btnHuy
+            // flowButtons
             // 
-            btnHuy.Anchor = AnchorStyles.Right;
-            btnHuy.Location = new Point(1272, 16);
-            btnHuy.Margin = new Padding(3, 4, 3, 4);
-            btnHuy.Name = "btnHuy";
-            btnHuy.Size = new Size(86, 33);
-            btnHuy.TabIndex = 4;
-            btnHuy.Text = "Hủy";
-            btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            btnLuu.Anchor = AnchorStyles.Right;
-            btnLuu.Location = new Point(1179, 16);
-            btnLuu.Margin = new Padding(3, 4, 3, 4);
-            btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(86, 33);
-            btnLuu.TabIndex = 3;
-            btnLuu.Text = "Lưu";
-            btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            btnXoa.Anchor = AnchorStyles.Left;
-            btnXoa.Location = new Point(222, 16);
-            btnXoa.Margin = new Padding(3, 4, 3, 4);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(86, 33);
-            btnXoa.TabIndex = 2;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            btnSua.Anchor = AnchorStyles.Left;
-            btnSua.Location = new Point(129, 16);
-            btnSua.Margin = new Padding(3, 4, 3, 4);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(86, 33);
-            btnSua.TabIndex = 1;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            btnThem.Anchor = AnchorStyles.Left;
-            btnThem.Location = new Point(37, 16);
-            btnThem.Margin = new Padding(3, 4, 3, 4);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(86, 33);
-            btnThem.TabIndex = 0;
+            flowButtons.Dock = DockStyle.Fill;
+            flowButtons.FlowDirection = FlowDirection.LeftToRight;
+            flowButtons.AutoSize = true;
+            flowButtons.Controls.Add(btnThem);
+            flowButtons.Controls.Add(btnSua);
+            flowButtons.Controls.Add(btnXoa);
+            flowButtons.Controls.Add(btnLuu);
+            flowButtons.Controls.Add(btnHuy);
+            flowButtons.Padding = new Padding(0, 5, 0, 5);
             btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
+            btnSua.Text = "Sửa";
+            btnXoa.Text = "Xóa";
+            btnLuu.Text = "Lưu";
+            btnHuy.Text = "Hủy";
+            foreach (var btn in new[] { btnThem, btnSua, btnXoa, btnLuu, btnHuy })
+            {
+                btn.Width = 100;
+                btn.Margin = new Padding(5);
+            }
             // 
             // frmKetQuaHoiGiang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 867);
-            Controls.Add(dgvKetQua);
-            Controls.Add(panelButtons);
-            Controls.Add(grpTimKiem);
-            Controls.Add(grpDiem);
-            Controls.Add(grpThongTin);
-            Controls.Add(lblTitle);
-            Margin = new Padding(3, 4, 3, 4);
+            ClientSize = new Size(1200, 900);
+            Controls.Add(pnlMain);
             Name = "frmKetQuaHoiGiang";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Kết quả hội giảng";
-            Load += frmKetQuaHoiGiang_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pnlMain).EndInit();
+            pnlMain.ResumeLayout(false);
+            layoutMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)grpThongTin.Panel).EndInit();
+            grpThongTin.Panel.ResumeLayout(false);
+            grpThongTin.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grpThongTin).EndInit();
             grpThongTin.ResumeLayout(false);
-            grpThongTin.PerformLayout();
+            tableInfo.ResumeLayout(false);
+            tableInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)cboHoiGiang).EndInit();
+            ((System.ComponentModel.ISupportInitialize)grpDiem.Panel).EndInit();
+            grpDiem.Panel.ResumeLayout(false);
+            grpDiem.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grpDiem).EndInit();
             grpDiem.ResumeLayout(false);
-            grpDiem.PerformLayout();
-            grpTimKiem.ResumeLayout(false);
-            grpTimKiem.PerformLayout();
+            tableScore.ResumeLayout(false);
+            tableScore.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)cboGiaiThuong).EndInit();
+            ((System.ComponentModel.ISupportInitialize)grpSearch.Panel).EndInit();
+            grpSearch.Panel.ResumeLayout(false);
+            grpSearch.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grpSearch).EndInit();
+            grpSearch.ResumeLayout(false);
+            searchLayout.ResumeLayout(false);
+            searchLayout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvKetQua).EndInit();
-            panelButtons.ResumeLayout(false);
+            buttonPanel.ResumeLayout(false);
+            buttonPanel.PerformLayout();
+            flowButtons.ResumeLayout(false);
             ResumeLayout(false);
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.GroupBox grpThongTin;
-        private System.Windows.Forms.TextBox txtCapThucHien;
-        private System.Windows.Forms.Label lblCapThucHien;
-        private System.Windows.Forms.TextBox txtTenBai;
-        private System.Windows.Forms.Label lblTenBai;
-        private System.Windows.Forms.TextBox txtDonVi;
-        private System.Windows.Forms.Label lblDonVi;
-        private System.Windows.Forms.TextBox txtCapBac;
-        private System.Windows.Forms.Label lblCapBac;
-        private System.Windows.Forms.TextBox txtHoTenGV;
-        private System.Windows.Forms.Label lblHoTenGV;
-        private System.Windows.Forms.ComboBox cboHoiGiang;
-        private System.Windows.Forms.Label lblHoiGiang;
-        private System.Windows.Forms.GroupBox grpDiem;
-        private System.Windows.Forms.ComboBox cboGiaiThuong;
-        private System.Windows.Forms.Label lblGiaiThuong;
-        private System.Windows.Forms.TextBox txtTongDiem;
-        private System.Windows.Forms.Label lblTongDiem;
-        private System.Windows.Forms.TextBox txtDiemThucHanhTB;
-        private System.Windows.Forms.Label lblDiemThucHanhTB;
-        private System.Windows.Forms.TextBox txtDiemThucHanh5;
-        private System.Windows.Forms.Label lblDiemThucHanh5;
-        private System.Windows.Forms.TextBox txtDiemThucHanh4;
-        private System.Windows.Forms.Label lblDiemThucHanh4;
-        private System.Windows.Forms.TextBox txtDiemThucHanh3;
-        private System.Windows.Forms.Label lblDiemThucHanh3;
-        private System.Windows.Forms.TextBox txtDiemThucHanh2;
-        private System.Windows.Forms.Label lblDiemThucHanh2;
-        private System.Windows.Forms.TextBox txtDiemThucHanh1;
-        private System.Windows.Forms.Label lblDiemThucHanh1;
-        private System.Windows.Forms.TextBox txtDiemGioiThieu;
-        private System.Windows.Forms.Label lblDiemGioiThieu;
-        private System.Windows.Forms.TextBox txtDiemHieuBiet;
-        private System.Windows.Forms.Label lblDiemHieuBiet;
-        private System.Windows.Forms.GroupBox grpTimKiem;
-        private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Label lblTimKiem;
-        private System.Windows.Forms.DataGridView dgvKetQua;
-        private System.Windows.Forms.Panel panelButtons;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
+        private KryptonPanel pnlMain;
+        private TableLayoutPanel layoutMain;
+        private KryptonLabel lblTitle;
+        private KryptonGroupBox grpThongTin;
+        private TableLayoutPanel tableInfo;
+        private KryptonLabel lblHoiGiang;
+        private KryptonComboBox cboHoiGiang;
+        private KryptonLabel lblHoTenGV;
+        private KryptonTextBox txtHoTenGV;
+        private KryptonLabel lblCapBac;
+        private KryptonTextBox txtCapBac;
+        private KryptonLabel lblDonVi;
+        private KryptonTextBox txtDonVi;
+        private KryptonLabel lblTenBai;
+        private KryptonTextBox txtTenBai;
+        private KryptonLabel lblCapThucHien;
+        private KryptonTextBox txtCapThucHien;
+        private KryptonGroupBox grpDiem;
+        private TableLayoutPanel tableScore;
+        private KryptonLabel lblDiemHieuBiet;
+        private KryptonTextBox txtDiemHieuBiet;
+        private KryptonLabel lblDiemGioiThieu;
+        private KryptonTextBox txtDiemGioiThieu;
+        private KryptonLabel lblP1;
+        private KryptonTextBox txtDiemThucHanh1;
+        private KryptonLabel lblP2;
+        private KryptonTextBox txtDiemThucHanh2;
+        private KryptonLabel lblP3;
+        private KryptonTextBox txtDiemThucHanh3;
+        private KryptonLabel lblP4;
+        private KryptonTextBox txtDiemThucHanh4;
+        private KryptonLabel lblP5;
+        private KryptonTextBox txtDiemThucHanh5;
+        private KryptonLabel lblDiemThucHanhTB;
+        private KryptonTextBox txtDiemThucHanhTB;
+        private KryptonLabel lblTongDiem;
+        private KryptonTextBox txtTongDiem;
+        private KryptonLabel lblGiaiThuong;
+        private KryptonComboBox cboGiaiThuong;
+        private KryptonGroupBox grpSearch;
+        private TableLayoutPanel searchLayout;
+        private KryptonLabel lblTim;
+        private KryptonTextBox txtTimKiem;
+        private KryptonButton btnTim;
+        private KryptonDataGridView dgvKetQua;
+        private TableLayoutPanel buttonPanel;
+        private FlowLayoutPanel flowButtons;
+        private KryptonButton btnThem;
+        private KryptonButton btnSua;
+        private KryptonButton btnXoa;
+        private KryptonButton btnLuu;
+        private KryptonButton btnHuy;
     }
 }

@@ -1,4 +1,4 @@
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace frmGiaoVien
 {
@@ -24,16 +24,11 @@ namespace frmGiaoVien
             mnuThoat = new ToolStripMenuItem();
             mnuDanhMuc = new ToolStripMenuItem();
             mnuGiaoVien = new ToolStripMenuItem();
-            mnuSangKien = new ToolStripMenuItem();
             mnuNghiepVu = new ToolStripMenuItem();
             mnuHoiGiang = new ToolStripMenuItem();
             mnuKetQua = new ToolStripMenuItem();
-            mnuLichGiangDay = new ToolStripMenuItem();
-            mnuLichTheoGiangVien = new ToolStripMenuItem();
             mnuThongKe = new ToolStripMenuItem();
             mnuThongKeTongHop = new ToolStripMenuItem();
-            mnuThongKeMoRong = new ToolStripMenuItem();
-            mnuThongKeKetHop = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             lblStatus = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
@@ -66,7 +61,7 @@ namespace frmGiaoVien
             // 
             // mnuDanhMuc
             // 
-            mnuDanhMuc.DropDownItems.AddRange(new ToolStripItem[] { mnuGiaoVien, mnuSangKien });
+            mnuDanhMuc.DropDownItems.AddRange(new ToolStripItem[] { mnuGiaoVien });
             mnuDanhMuc.Name = "mnuDanhMuc";
             mnuDanhMuc.Size = new Size(90, 24);
             mnuDanhMuc.Text = "Danh mục";
@@ -74,18 +69,12 @@ namespace frmGiaoVien
             // mnuGiaoVien
             // 
             mnuGiaoVien.Name = "mnuGiaoVien";
-            mnuGiaoVien.Size = new Size(228, 26);
+            mnuGiaoVien.Size = new Size(154, 26);
             mnuGiaoVien.Text = "Giáo viên";
-            // 
-            // mnuSangKien
-            // 
-            mnuSangKien.Name = "mnuSangKien";
-            mnuSangKien.Size = new Size(228, 26);
-            mnuSangKien.Text = "Sáng kiến / cải tiến";
             // 
             // mnuNghiepVu
             // 
-            mnuNghiepVu.DropDownItems.AddRange(new ToolStripItem[] { mnuHoiGiang, mnuKetQua, mnuLichGiangDay, mnuLichTheoGiangVien });
+            mnuNghiepVu.DropDownItems.AddRange(new ToolStripItem[] { mnuHoiGiang, mnuKetQua });
             mnuNghiepVu.Name = "mnuNghiepVu";
             mnuNghiepVu.Size = new Size(91, 24);
             mnuNghiepVu.Text = "Nghiệp vụ";
@@ -93,30 +82,18 @@ namespace frmGiaoVien
             // mnuHoiGiang
             // 
             mnuHoiGiang.Name = "mnuHoiGiang";
-            mnuHoiGiang.Size = new Size(274, 26);
+            mnuHoiGiang.Size = new Size(213, 26);
             mnuHoiGiang.Text = "Đăng ký hội giảng";
             // 
             // mnuKetQua
             // 
             mnuKetQua.Name = "mnuKetQua";
-            mnuKetQua.Size = new Size(274, 26);
+            mnuKetQua.Size = new Size(213, 26);
             mnuKetQua.Text = "Kết quả hội giảng";
-            // 
-            // mnuLichGiangDay
-            // 
-            mnuLichGiangDay.Name = "mnuLichGiangDay";
-            mnuLichGiangDay.Size = new Size(274, 26);
-            mnuLichGiangDay.Text = "Lịch giảng dạy";
-            // 
-            // mnuLichTheoGiangVien
-            // 
-            mnuLichTheoGiangVien.Name = "mnuLichTheoGiangVien";
-            mnuLichTheoGiangVien.Size = new Size(274, 26);
-            mnuLichTheoGiangVien.Text = "Lịch theo giảng viên";
             // 
             // mnuThongKe
             // 
-            mnuThongKe.DropDownItems.AddRange(new ToolStripItem[] { mnuThongKeTongHop, mnuThongKeMoRong, mnuThongKeKetHop });
+            mnuThongKe.DropDownItems.AddRange(new ToolStripItem[] { mnuThongKeTongHop });
             mnuThongKe.Name = "mnuThongKe";
             mnuThongKe.Size = new Size(84, 24);
             mnuThongKe.Text = "Thống kê";
@@ -124,21 +101,9 @@ namespace frmGiaoVien
             // mnuThongKeTongHop
             // 
             mnuThongKeTongHop.Name = "mnuThongKeTongHop";
-            mnuThongKeTongHop.Size = new Size(299, 26);
+            mnuThongKeTongHop.Size = new Size(221, 26);
             mnuThongKeTongHop.Text = "Thống kê / báo cáo";
             // 
-            // 
-            // mnuThongKeMoRong
-            // 
-            mnuThongKeMoRong.Name = "mnuThongKeMoRong";
-            mnuThongKeMoRong.Size = new Size(299, 26);
-            mnuThongKeMoRong.Text = "Thống kê mở rộng";
-            // 
-            // mnuThongKeKetHop
-            // 
-            mnuThongKeKetHop.Name = "mnuThongKeKetHop";
-            mnuThongKeKetHop.Size = new Size(299, 26);
-            mnuThongKeKetHop.Text = "Trung tâm thống kê";
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
@@ -187,16 +152,11 @@ namespace frmGiaoVien
         private ToolStripMenuItem mnuThoat;
         private ToolStripMenuItem mnuDanhMuc;
         private ToolStripMenuItem mnuGiaoVien;
-        private ToolStripMenuItem mnuSangKien;
         private ToolStripMenuItem mnuNghiepVu;
         private ToolStripMenuItem mnuHoiGiang;
         private ToolStripMenuItem mnuKetQua;
-        private ToolStripMenuItem mnuLichGiangDay;
-        private ToolStripMenuItem mnuLichTheoGiangVien;
         private ToolStripMenuItem mnuThongKe;
         private ToolStripMenuItem mnuThongKeTongHop;
-        private ToolStripMenuItem mnuThongKeMoRong;
-        private ToolStripMenuItem mnuThongKeKetHop;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatus;
     }

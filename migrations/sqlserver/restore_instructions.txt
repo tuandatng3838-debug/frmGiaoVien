@@ -1,0 +1,31 @@
+﻿# Restore hướng dẫn cho QLHoiGiang.bak
+
+1. Mở SQL Server Management Studio (SSMS) bằng tài khoản có quyền restore.
+2. Vào `Object Explorer` > chuột phải `Databases` > `Restore Database...`.
+3. Ở mục `Source`, chọn `Device`, bấm `...`, thêm file backup: `C:\path\to\QLHoiGiang.bak` (đổi đường dẫn thực tế, ví dụ nếu file từ agent là `/mnt/data/QLHoiGiang.bak`, copy sang máy cục bộ).
+4. Ở mục `Destination`, đặt tên database test: `QLHoiGiang_test_<timestamp>` để tránh đụng DB hiện có.
+5. Trước khi nhấn OK, qua tab `Files`, tick `Relocate all files to folder` hoặc tự chỉnh đường dẫn `.mdf` / `.ldf` (ví dụ `C:\SQLData\QLHoiGiang_test_<timestamp>.mdf`).
+6. Nhấn OK để restore; kiểm tra thông báo thành công.
+
+## Lệnh T-SQL mẫu (dùng trong SSMS > New Query)
+```sql
+-- Xác định logical file names
+RESTORE FILELISTONLY FROM DISK = N'C:\path\to\QLHoiGiang.bak';
+GO
+
+-- Restore về DB test (chỉnh logical/physical name sau khi chạy FILELISTONLY)
+RESTORE DATABASE [QLHoiGiang_test_<timestamp>]
+FROM DISK = N'C:\path\to\QLHoiGiang.bak'
+WITH MOVE N'LogicalDataName' TO N'C:\SQLData\QLHoiGiang_test_<timestamp>.mdf',
+     MOVE N'LogicalLogName'  TO N'C:\SQLLog\QLHoiGiang_test_<timestamp>.ldf',
+     REPLACE,
+     RECOVERY;
+GO
+```
+
+### Giải thích:
+- `LogicalDataName` / `LogicalLogName`: lấy từ cột `LogicalName` trong kết quả `RESTORE FILELISTONLY`.
+- Chỉ dùng `REPLACE` nếu chắc chắn DB đích chưa tồn tại hoặc chấp nhận ghi đè DB test.
+- Sau restore, chạy script `migrations/sqlserver/inspect_schema.sql` để thu thập schema.
+
+// ASSUMPTION: Không có quyền truy cập SQL Server trong môi trường agent nên chỉ cung cấp hướng dẫn thay vì restore trực tiếp.
